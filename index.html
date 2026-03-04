@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéStats Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Pokémon Search</h1>
+        <div class="search-box">
+            <input type="text" id="pokemonInput" placeholder="Enter Pokémon name (e.g. Pikachu)">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div id="pokeCard" class="card hidden">
+            <h2 id="pokeName"></h2>
+            <img id="pokeImage" src="" alt="Pokemon Image">
+            
+            <div class="stats-grid" id="statsContainer">
+                </div>
+        </div>
+        
+        <p id="errorMsg" class="error hidden">Pokémon not found. Try again!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
